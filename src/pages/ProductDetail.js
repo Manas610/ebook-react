@@ -11,7 +11,7 @@ export const ProductDetail = () => {
   const [product, setProduct] = useState({});
   const { id } = useParams();
   const [inCart , setInCart] = useState(false);
-  const { cartList , addToCart , removeFromCart } = useCart();
+  const { cartList , addToCart , removeFromCart } =useCart();
 
   useEffect(() => {
       const isInCart = cartList.find(item => item.id === product.id);
